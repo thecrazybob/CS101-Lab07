@@ -15,6 +15,9 @@ public class LibraryBook {
     String title, author, dueDate;
     int timesLoaned;
 
+    /** 
+     * Constructor for LibraryBook with initialization of the LibraryBook object's data
+     */
     public LibraryBook() {
 
         title = "The art of living : the classic manual on virtue, happiness, and effectiveness";
@@ -24,24 +27,56 @@ public class LibraryBook {
     
     }
 
+    /** 
+     * Loans a book (increments timesLoaned and changes dueDate)
+     * @return void
+     */
     public void loanBook() {
+
         timesLoaned += 1;
         dueDate = "22.12.2020";
+
     }
 
+    /** 
+     * Returns a book (dueDate is reset)
+     * @return void
+     */
     public void returnBook() {
+
         dueDate = "";
+    
     }
 
+    /** 
+     * Returns the number of times the book has been loaned
+     * @return int
+     */
     public int getTimesLoaned() {
+
         return timesLoaned;
+    
     }
 
+    
+    /** 
+     * Returns if the book is currently being loaned
+     * @return boolean
+     */
     public boolean onLoan() {
+
         return (dueDate == "") ? false : true;
+    
     }
 
-    public String toString() {
+    
+    /** 
+     * Returns the string representation of the object
+     * @return String
+     */
+     public String toString() {
+
         return "title: " + title + " author: " + author + " dueDate: " + dueDate + " timesLoaned: " + timesLoaned;
+    
     }
 }
