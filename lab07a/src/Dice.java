@@ -11,7 +11,7 @@
 
 public class Dice {
 
-    // variables
+    // properties
     int result;
 
     // initialize two Die objects

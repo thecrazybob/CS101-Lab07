@@ -11,7 +11,7 @@
 
 public class LibraryBook {
 
-    // variables
+    // properties
     String title, author, dueDate;
     int timesLoaned;
 
