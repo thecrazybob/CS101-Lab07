@@ -44,5 +44,12 @@ public class Die {
     public int getFaceValue() {
         return current_face_of_die;
     }
-
+    
+    /** 
+     * Returns the string interpretation of the object
+     * @return String
+     */
+    public String toString() {
+        return current_face_of_die + " ";
+    }
 }
