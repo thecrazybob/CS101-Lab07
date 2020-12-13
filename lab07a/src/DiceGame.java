@@ -12,7 +12,7 @@
 public class DiceGame {
 
     // initialize instance of Dice
-    Dice dice =  new Dice();
+    Dice dice = new Dice();
     
     /** 
      * Calls .roll() method on Dice object until a sum of 12 is returned

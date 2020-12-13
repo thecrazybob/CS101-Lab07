@@ -11,7 +11,7 @@
 
 public class Die {
 
-    // variables
+    // properties
     int current_face_of_die;
 
     /** 
